@@ -16,11 +16,17 @@ body {
    box-shadow: none; 
    margin: 1.5rem 0rem;
 }
-.navbar-header {
+.navbar-header img {
   float: right;
   display: block;
   position: relative;
   padding: 3rem 0rem;
+  width: 100%;
+  height: auto;
+}
+.navbar-brand {
+  margin: 0px;
+  padding: 0px;
 }
 .sidebar-nav .navbar ul {
   float: none;
@@ -34,28 +40,41 @@ body {
   text-align: right;
 }
 .navbar-default .navbar-nav>li>a {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-family: "Open Sans", Helvetica, sans-serif;
   float: none;
   display: block;
 }
+.navbar-default .navbar-nav>.active>a,  
+.navbar-default .navbar-nav>li.active>a:focus {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #fff;
+    background: #000;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: #232323;
+  background: #eaeaea;
+}
 
 /* MAIN */
-.col-md-8 {
+.col-sm-8 {
   display: block;
-  padding: 2rem 4rem;
+  padding: 5rem 4rem 10rem 4rem;
 }
 
 p {
   color: black;
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: "Lato", Helvetica, sans-serif;
   font-size: 1.5rem;
+  font-weight: lighter;
 }
 
 /* FOOTER */
-footer .col-md-4 {
+footer p {
   font-size: 0.75rem;
-  margin: 1.5rem 0rem;
+  text-align: right;
+  margin: 2rem 2rem;
 }
 
 /*.container {
@@ -87,21 +106,35 @@ footer .col-md-4 {
 
 
 @media (max-width: 768px) {
-  .header h1 {
-    margin: 20px 10px;
-    display: inline-block;
+  .navbar-default {
+   margin: 0px 0px;
+   padding: 0px;
+  }
+  .navbar-brand img {
     float: left;
+    margin: 20px 20px 0px 0px;
+    width: auto;
+    height: 100%;
+  }
+  .sidebar-nav .navbar-nav > li {
+    display: inline-block;
+    margin: 10px 5px 5px 5px;
+  }
+  .navbar-default .navbar-nav>li>a {
+    display: inline-block;
+    font-size: 1.5rem;
   }
 
-  .sidebar {
-    display: inline-block;
-    float: left;
-    margin: 40px 20px;
+  .col-sm-8 {
+    display: block;
+    padding: 2rem 4rem 10rem 4rem;
   }
 
-  .navbar li {
-    display: inline;
-    list-style-type: none;
-    margin: 20px 10px;
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
   }
 }
