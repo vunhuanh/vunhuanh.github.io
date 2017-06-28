@@ -10,8 +10,8 @@
   float: right;
   display: block;
   position: relative;
-  padding: 2rem 0rem;
-  width: 90%;
+  padding: 2rem 0rem 0rem 0rem;
+  width: 100%;
   height: auto;
 }
 .navbar-brand {
@@ -53,13 +53,13 @@
 /* MAIN */
 .col-sm-8 {
   display: block;
-  padding: 5rem 30rem 10rem 4rem;
+  padding: 3rem 0rem 0rem 7rem;
 }
 
 .list-head {
   font-size: 5rem;
   font-weight: bold;
-  font-family: Arvo, Georgia, serif;
+  font-family: Arvo, Helvetica, sans-serif;
 }
 
 p {
@@ -133,10 +133,16 @@ footer p {
   }
 
   footer {
-    position: fixed;
+    
     bottom: 0;
     width: 100%;
     height: auto;
     background-color: #fff;
+  }
+}
+
+@media (max-width: 480px) {
+   .navbar-brand img {
+    display: none;
   }
 }
