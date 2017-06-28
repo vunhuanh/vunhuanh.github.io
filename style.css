@@ -153,19 +153,19 @@ footer p {
   }
 }
 
-@media only screen and (max-device-width: 599px) {
+@media (max-width: 599px) {
   .navbar-brand .tablet {
     display: none !important;
   }
   .navbar-brand .phone {
     display: inline-block;
     float: left;
-    margin: 20px 0px 0px 10px;
+    margin: 20px 5px 0px 30px;
     width: auto;
     height: 70%;
   }
   .sidebar-nav-fixed .navbar-nav > li {
     display: inline-block;
-    margin: 5px 3px 0px 3px;
+    margin: 5px 0px 0px 3px;
   }
 }
