@@ -18,6 +18,12 @@
   margin: 0px;
   padding: 0px;
 }
+.navbar-brand .tablet {
+  display: none;
+}
+.navbar-brand .phone {
+  display: none;
+}
 .sidebar-nav-fixed {
   width: 100%;
 }
@@ -34,7 +40,7 @@
 }
 .navbar-default .navbar-nav>li>a {
   font-size: 1.5rem;
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   float: none;
   display: block;
 }
@@ -59,12 +65,12 @@
 .list-head {
   font-size: 5rem;
   font-weight: bold;
-  font-family: Arvo, Helvetica, sans-serif;
+  font-family: 'Arvo', Helvetica, sans-serif;
 }
 
 p {
   color: black;
-  font-family: "Lato", Helvetica, sans-serif;
+  font-family: 'Lato', Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: lighter;
 }
@@ -76,22 +82,7 @@ footer p {
   margin: 2rem 2rem;
 }
 
-/*.container {
-  width: 50%;
-  height: 200px;
-  overflow: hidden;
-}
-
-.container img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}*/
-
 /* CONTACT */
-.contact-btn {
-  float: right;
-}
 .contact-btn a {
   cursor: pointer;
   margin-right: 30px;
@@ -106,20 +97,21 @@ footer p {
 
 @media (max-width: 767px) {
   .navbar-static-top {
-   position: fixed;
-   top: 0;
-   left: 0;
-   background-color: #000;
-   width: 100%;
-   height: auto;
-   overflow: hidden;
-   margin-top: 0;
+     position: fixed;
+     top: 0;
+     left: 0;
+     background-color: #000;
+     width: 100%;
+     height: auto;
+     overflow: hidden;
+     margin-top: 0;
   }
   .navbar-default {
-   margin: 0px 0px 20px;
-   padding: 0px;
+    margin: 0px 0px 20px;
+    padding: 0px;
   }
   .navbar-brand .tablet {
+    display: inline-block;
     float: left;
     margin: 20px 20px 0px 10px;
     width: auto;
