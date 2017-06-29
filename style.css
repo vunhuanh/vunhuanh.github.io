@@ -40,32 +40,31 @@
 }
 .navbar-default .navbar-nav>li>a {
   font-size: 1.5rem;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
+  color: #aaa;
   float: none;
   display: block;
 }
 .navbar-default .navbar-nav>.active>a,  
 .navbar-default .navbar-nav>li.active>a:focus {
-    font-size: 2rem;
-    font-weight: bolder;
-    color: #fff;
-    background: #000;
+  font-size: 2.25rem;
+  font-weight: bolder;
+  color: #fff;
+  background: #000;
 }
 .navbar-default .navbar-nav>li>a:hover {
   color: #232323;
   background: #eaeaea;
 }
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #fff;
+  background: #000;
+}
 
-/* MAIN */
+/* INDEX */
 .col-sm-8 {
   display: block;
   padding: 3rem 0rem 0rem 7rem;
-}
-
-.list-head {
-  font-size: 5rem;
-  font-weight: bold;
-  font-family: 'Arvo', Helvetica, sans-serif;
 }
 
 p {
@@ -75,6 +74,74 @@ p {
   font-weight: lighter;
 }
 
+.list-head {
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: 'Arvo', 'Palatino', sans-serif;
+  list-style-type: none;
+  color: #000;
+}
+.who, .what, .where {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  list-style-type: none;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+.who li, .what li, .where li {
+  margin-bottom: 0.5rem;
+}
+
+table {
+  border-collapse: collapse;
+  padding: 0.5rem 0rem;
+}
+table a:link, a:visited {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+table a:hover, a:active {
+  text-decoration: underline;
+}
+tr>td {
+  padding: 0.5rem 0;
+}
+td img {
+  display: inline;
+  width: 25%;
+  height: auto;
+  margin: 0rem 2rem;
+}
+#email, #github {
+  font-family: 'Arvo', 'Palatino', sans-serif;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  display: none;
+}
+
+/* PROJECTS */
+
+/* ABOUT */
+  /* contact */
+.contact-btn {
+  margin: 1rem 1rem;
+}
+.contact-btn a {
+  cursor: pointer;
+  border: none;
+  position: relative;
+}
+.contact-btn a:active {
+  top: 2px;
+}
+.contact-btn img {
+  margin: 0 1rem;
+  max-width: 7%;
+  height: auto;
+}
+
 /* FOOTER */
 footer p {
   font-size: 0.75rem;
@@ -82,17 +149,7 @@ footer p {
   margin: 2rem 2rem;
 }
 
-/* CONTACT */
-.contact-btn a {
-  cursor: pointer;
-  margin-right: 30px;
-  padding: 8px 18px;
-  border: 1px solid #204156;
-  position: relative;
-}
-.contact-btn a:active {
-  top: 2px;
-}
+
 
 
 @media (max-width: 767px) {
