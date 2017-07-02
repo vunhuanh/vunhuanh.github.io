@@ -36,9 +36,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
 
-    <!--Fonts-->
+    <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   </head>
 
   <body>
@@ -74,75 +76,84 @@
         <!--Content-->
         <div class="content">
           <div class="col-sm-8">
-            
-            <ul class="about-list" id="main">
+            <div class="outer-list">
+              <h1 class="button" data-target="skills">Skills</h1>
+              <div id="skills">
 
-              <li class="button" data-target="skills">Skills</li>
-                <ul id="skills">
-
-                  <li class="button" data-target="language">Language</li>
-                    <ul id="language">
-                      <div class="lang">
-                        <div class="row">
-                          <div class="col-sm-5">
-                            <p>Formal</p>
-                            <ul>
-                              <li>Java</li>
-                              <li>C</li>
-                              <li>HTML</li>
-                              <li>CSS & Bootstrap</li>
-                              <li>Javascript & JQuery</li>
-                              <li>F#</li>
-                              <li>Python</li>
-                              <li>Ruby</li>
-                            </ul>
-                          </div>
-                          <div class="col-sm-5">
-                            <p>Natural</p>
-                            <ul>
-                              <li>English</li>
-                              <li>Français</li>
-                              <li>Tiếng Việt</li>
-                              <li>日本語</li>
-                              <li>Español</li>
-                              <li>中文</li>
-                            </ul>
-                          </div>
-                        </div>
+              <div class="inner-list">
+                <h2 class="button" data-target="language">Language</h2>
+                  <ul id="language">
+                    <div class="row">
+                      <div class="col-sm-5" id="formal">
+                        <h3>Formal</h3>
+                        <ul>
+                          <li class="lvl7">Java</li>
+                          <li class="lvl6">C</li>
+                          <li class="lvl6">HTML</li>
+                          <li class="lvl6">CSS & Bootstrap</li>
+                          <li class="lvl5">Javascript & JQuery</li>
+                          <li class="lvl5">F#</li>
+                          <li class="lvl3">Python</li>
+                          <li class="lvl2">Ruby</li>
+                        </ul>
                       </div>
+                      <div class="col-sm-5" id="natural">
+                        <h3>Natural</h3>
+                        <ul>
+                          <li class="lvl8">English</li>
+                          <li class="lvl8">Français</li>
+                          <li class="lvl8">Tiếng Việt</li>
+                          <li class="lvl5">日本語</li>
+                          <li class="lvl4">Español</li>
+                          <li class="lvl3">中文</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+
+                <div class="inner-list">
+                  <h2 class="button" data-target="software">Software</h2> 
+                  <ul id="software">
+                    <ul>
+                      <li class="lvl7">Photoshop</li>
+                      <li class="lvl5">Eclipse</li>
+                      <li class="lvl5">Audacity</li>
+                      <li class="lvl8">Microsoft Office Suite</li>
+                      <li class="lvl8">iWork Suite</li>
                     </ul>
+                  </ul>
+                </div>
 
-                   <li class="button" data-target="software">Software</li> 
-                    <ul id="software">
-                      <li>Photoshop</li>
-                      <li>Eclipse</li>
-                      <li>Audacity</li>
-                      <li>Microsoft Office Suite</li>
-                      <li>iWork Suite</li>
-                    </ul>
+                
+              </div><!--END SKILLS DIV-->
+            </div><!--END SKILLS OUTERLIST-->
+            
+
+            <div class="outer-list">
+              <h1 class="button" data-target="interests">Interests</h1>
+              <ul id="interests">
+                <ul>
+                  <li class="lvl6">Graphic design</li>
+                  <li class="lvl7">Translating & learning languages</li>
+                  <li class="lvl6">Tinkering with code</li>
+                  <li class="lvl4">Digital painting</li>
                 </ul>
+              </ul>
+            </div>
 
-              <li class="button" data-target="interests">Interests</li>
-                <ul id="interests">
-                  <li>Graphic design</li>
-                  <li>Translating & learning languages</li>
-                  <li>Tinkering with code</li>
-                  <li>Digital painting</li>
-                </ul>
+            <!--More info-->
+            <div class="contact-btn" id="contact">
+              <a href="Nhu_Anh_VU_CV.pdf" download><img src="img/icon/CV.png" title="Download CV"/></a>
+              <a href="mailto:vunhuanh@gmail.com" target="_blank"><img src="img/icon/mail.png" title="Email"/></a>
+              <a href="https://github.com/vunhuanh" target="_blank"><img src="img/icon/github_logo_outline.png" title="Github"/></a>
+              <a href="https://www.linkedin.com/in/nhu-anh-vu-83829710a/" target="_blank"><img src="img/icon/linkedin_logo.png" title="LinkedIn"/></a>
+            </div>
 
-              <!--More info-->
-              <div class="contact-btn" id="contact">
-                <a href="Nhu_Anh_VU_CV.pdf" download><img src="img/icon/CV.png" title="Download CV"/></a>
-                <a href="mailto:vunhuanh@gmail.com" target="_blank"><img src="img/icon/mail.png" title="Email"/></a>
-                <a href="https://github.com/vunhuanh" target="_blank"><img src="img/icon/github_logo_outline.png" title="Github"/></a>
-                <a href="https://www.linkedin.com/in/nhu-anh-vu-83829710a/" target="_blank"><img src="img/icon/linkedin_logo.png" title="LinkedIn"/></a>
-              </div>
-
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+          </div> <!--END COLUMN-->
+        </div><!--END CONTENT-->
+      </div><!--END ROW-->
+    </div><!--END CONTAINER-->
 
   
     <!--Footer-->
