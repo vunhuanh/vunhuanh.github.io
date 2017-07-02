@@ -1,8 +1,18 @@
 $(document).ready(function(){
-  $("#button1").click(function() { 
-      $("#email").toggle(500);
-  });
-  $("#button2").click(function() { 
-    $("#github").toggle(500);
+  /*
+  $('#main li ul').hide();
+    $('#main li').click(function() {
+        $(this).children('ul').slideToggle("slow");
+        $(this).toggleClass('open');
+  });*/
+
+  $(".button").click(function() { 
+    var clicked = this;
+    $clicked = $(clicked);
+    var target = $clicked.data("target");
+    $("#" + target).slideToggle(500);
+
+    $(".rotate").toggle();
   });
 });
+

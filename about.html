@@ -8,15 +8,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nhu Anh | Home</title>
-    <link href="img/logo.ico" rel="icon" type="image/x-icon"/>
+    <link href="https://www.dropbox.com/s/a4jg9ee1913uvcn/logo.ico?dl=0" rel="shortcut icon" type="image/x-icon"/>
 
-    <!--CSS-->
+    <!--EXTERNAL-->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 
     <!--Fonts-->
-    <link href="//fonts.googleapis.com/css?family=Open+Sans" type="text/css" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
   </head>
 
   <body>
@@ -50,29 +52,78 @@
         </div>
 
         <!--Content-->
-        <div class="col-sm-8">
-          <ul>
-            <li>Skills</li>
-              <ul>
-                <li>Language</li>
-                  <ul>
-                    <li>Formal</li>
-                    <li>Natural</li>
-                  </ul>
-                 <li>Software</li> 
-              </ul>
-            <li>Interests</li>
-            <li>Education</li>
-            <li>Resume</li>
-            <li>Contact</li>
-              <div class="contact-btn">
-                <a href="mailto:vunhuanh@gmail.com" target="_blank"><img src="img/icon/mail.png"/></a>
-                <a href="https://github.com/vunhuanh" target="_blank"><img src="img/icon/github_logo_outline.png"/></a>
+        <div class="content">
+          <div class="col-sm-8">
+            
+            <ul class="about-list" id="main">
+
+              <li class="button" data-target="skills">Skills</li>
+                <ul id="skills">
+
+                  <li class="button" data-target="language">Language</li>
+                    <ul id="language">
+                      <div class="lang">
+                        <div class="row">
+                          <div class="col-sm-5">
+                            <p>Formal</p>
+                            <ul>
+                              <li>Java</li>
+                              <li>C</li>
+                              <li>HTML</li>
+                              <li>CSS & Bootstrap</li>
+                              <li>Javascript & JQuery</li>
+                              <li>F#</li>
+                              <li>Python</li>
+                              <li>Ruby</li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-5">
+                            <p>Natural</p>
+                            <ul>
+                              <li>English</li>
+                              <li>Français</li>
+                              <li>Tiếng Việt</li>
+                              <li>日本語</li>
+                              <li>Español</li>
+                              <li>中文</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </ul>
+
+                   <li class="button" data-target="software">Software</li> 
+                    <ul id="software">
+                      <li>Photoshop</li>
+                      <li>Eclipse</li>
+                      <li>Audacity</li>
+                      <li>Microsoft Office Suite</li>
+                      <li>iWork Suite</li>
+                    </ul>
+                </ul>
+
+              <li class="button" data-target="interests">Interests</li>
+                <ul id="interests">
+                  <li>Graphic design</li>
+                  <li>Translating & learning languages</li>
+                  <li>Tinkering with code</li>
+                  <li>Digital painting</li>
+                </ul>
+
+              <!--More info-->
+              <div class="contact-btn" id="contact">
+                <a href="Nhu_Anh_VU_CV.pdf" download><img src="img/icon/CV.png" title="Download CV"/></a>
+                <a href="mailto:vunhuanh@gmail.com" target="_blank"><img src="img/icon/mail.png" title="Email"/></a>
+                <a href="https://github.com/vunhuanh" target="_blank"><img src="img/icon/github_logo_outline.png" title="Github"/></a>
+                <a href="https://www.linkedin.com/in/nhu-anh-vu-83829710a/" target="_blank"><img src="img/icon/linkedin_logo.png" title="LinkedIn"/></a>
               </div>
-          </ul>
+
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+
   
     <!--Footer-->
     <footer class="container">
