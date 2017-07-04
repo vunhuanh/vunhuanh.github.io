@@ -1,4 +1,11 @@
 /* GENERAL */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 p {
   color: black;
   font-family: 'Lato', Helvetica, sans-serif;
@@ -88,9 +95,14 @@ h3 {
 }
 
 /* INDEX */
+#main {
+  padding: 0;
+  margin: 0;
+}
 .content {
   display: block;
-  padding: 3rem 0rem 0rem 7rem;
+  padding: 3rem 0rem 0rem 3rem;
+  margin-left: 1rem;
 }
 
 .list-head {
@@ -141,21 +153,53 @@ td img {
 }
 
 /* PROJECTS */
+.switcher {
+  float: right;
+  margin-right: 3rem; 
+}
+select {
+  background-color: #fff;
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
 
+.sort-type {
+    width: auto;
+    height: 100%;
+}
+
+#proj-se, #proj-graph, #proj-trans {
+  width: 100%;
+    height: auto;
+    overflow: scroll;
+  border: 1px solid red;
+  margin: 1rem 0;
+}
+
+#proj1, #proj2, #proj3 {
+  display: none;
+  
+}
+
+
+.sort-date {
+  display: none;
+}
 
 /* ABOUT */
 .outer-list {
-  background-color: #eee;
+  background-color: #fafafa;
   padding: 1.5rem;
   margin: 1rem 0rem 1rem 3rem;
 }
 .inner-list {
-  background-color: #e0e0e0;
+  background-color: #eee;
   padding: 1rem;
   margin: 0.5rem;
 }
 #formal, #natural {
-  background-color: #d0d0d0;
+  background-color: #e0e0e0;
   padding: 1rem;
   margin: 1rem 2rem;
 }
@@ -265,12 +309,11 @@ footer p {
 
   .content {
     display: block;
-    padding: 5rem 4rem 0rem 2rem;
-    margin-top: 10rem;
+    margin-top: 11rem;
+    margin-right: 2rem;
   }
 
   .outer-list {
-    background-color: #eee;
     padding: 1rem;
     margin: 0.5rem;
   }
